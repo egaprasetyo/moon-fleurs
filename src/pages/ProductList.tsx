@@ -15,7 +15,7 @@ export default function ProductList() {
     <main className="min-h-screen bg-bg-main">
       <Navbar />
       
-      <section className="pt-40 pb-20">
+      <section className="pt-28 pb-20">
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
             <div className="max-w-2xl">
