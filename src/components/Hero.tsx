@@ -15,7 +15,7 @@ export default function Hero() {
             <span className="inline-block text-xs uppercase tracking-[0.4em] mb-6 font-semibold opacity-60">
               Est. 2024 • Butik Bunga Mewah
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] mb-8 text-primary-text">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif leading-[1.1] mb-8 text-primary-text">
               Bunga Elegan untuk Setiap <span className="italic">Momen</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-text/70 mb-12 font-light leading-relaxed max-w-lg">
