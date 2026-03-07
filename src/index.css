@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-primary-text: #504641;
+  --color-bg-main: #FFFCF9;
+  --color-bg-accent: #FBEDE0;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-main text-primary-text font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.glass-nav {
+  @apply bg-bg-main/80 backdrop-blur-md border-b border-primary-text/5;
+}
+
+.btn-primary {
+  @apply px-8 py-3 bg-primary-text text-bg-main font-medium rounded-full transition-all duration-300 hover:bg-primary-text/90 hover:scale-105 active:scale-95;
+}
+
+.btn-outline {
+  @apply px-8 py-3 border border-primary-text text-primary-text font-medium rounded-full transition-all duration-300 hover:bg-primary-text hover:text-bg-main;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-bg-main;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-text/20 rounded-full hover:bg-primary-text/30 transition-colors;
+}
