@@ -23,29 +23,52 @@ const testimonials = [
     role: 'Desainer Interior',
     content: 'Moon Fleurs membawa sentuhan keanggunan puitis ke setiap ruangan. Layanan berlangganan mingguan mereka telah benar-benar mengubah suasana studio saya.',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop'
+  },
+  {
+    id: 4,
+    name: 'Aria Wijaya',
+    role: 'Kolektor Bunga',
+    content: 'Kualitas bunga di sini benar-benar berbeda. Wanginya sangat alami dan tahan lama. Sangat direkomendasikan untuk hadiah spesial.',
+    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop'
+  },
+  {
+    id: 5,
+    name: 'Budi Santoso',
+    role: 'Pengusaha',
+    content: 'Pelayanan yang sangat profesional. Saya memesan untuk dekorasi kantor dan hasilnya sangat memuaskan. Kolega saya banyak yang memuji.',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop'
   }
 ];
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-bg-main">
-      <div className="container mx-auto px-6 md:px-12">
-        <div className="text-center mb-16">
+    <section className="py-24 bg-bg-main overflow-hidden">
+      <div className="container mx-auto px-6 md:px-12 mb-16">
+        <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-serif mb-4">Kata Mereka</h2>
           <p className="text-primary-text/60 max-w-lg mx-auto italic">
             "Apa yang dikatakan klien kami tentang pengalaman mereka bersama Moon Fleurs"
           </p>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((t, index) => (
-            <motion.div
-              key={t.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="bg-bg-accent/20 p-8 rounded-3xl relative"
+      <div className="relative flex overflow-x-hidden">
+        <motion.div 
+          className="flex whitespace-nowrap gap-8 py-4"
+          animate={{ x: [0, -1920] }}
+          transition={{ 
+            x: {
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 40,
+              ease: "linear",
+            }
+          }}
+        >
+          {[...testimonials, ...testimonials].map((t, index) => (
+            <div
+              key={`${t.id}-${index}`}
+              className="inline-block w-[350px] md:w-[450px] bg-bg-accent/20 p-8 rounded-3xl relative whitespace-normal shrink-0"
             >
               <Quote className="absolute top-6 right-8 text-primary-text/10" size={48} />
               
@@ -71,9 +94,9 @@ export default function Testimonials() {
                   <p className="text-xs uppercase tracking-widest opacity-50">{t.role}</p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,29 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-
-const categories = [
-  {
-    name: 'Bunga Ulang Tahun',
-    image: 'https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?q=80&w=800&auto=format&fit=crop',
-    count: '24 Produk'
-  },
-  {
-    name: 'Buket Pernikahan',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop',
-    count: '18 Produk'
-  },
-  {
-    name: 'Bunga Romantis',
-    image: 'https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=800&auto=format&fit=crop',
-    count: '32 Produk'
-  },
-  {
-    name: 'Bunga Simpati',
-    image: 'https://images.unsplash.com/photo-1525310235261-9462700be58e?q=80&w=800&auto=format&fit=crop',
-    count: '12 Produk'
-  }
-];
+import { CATEGORIES } from '@/src/constants';
 
 export default function Categories() {
   return (
@@ -43,16 +21,16 @@ export default function Categories() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {categories.map((cat, index) => (
+          {CATEGORIES.map((cat, index) => (
             <motion.div
-              key={cat.name}
+              key={cat.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
               className="group cursor-pointer"
             >
-              <Link to="/categories">
+              <Link to={`/category/${cat.id}`}>
                 <div className="relative aspect-[3/4] overflow-hidden rounded-2xl mb-4">
                   <img
                     src={cat.image}

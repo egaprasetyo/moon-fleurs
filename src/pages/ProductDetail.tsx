@@ -117,42 +117,47 @@ export default function ProductDetail() {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <div className="flex flex-row gap-3 md:gap-4 mb-12">
                 <a 
                   href={getWhatsAppLink(product.name)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 btn-primary flex items-center justify-center gap-3 py-4"
+                  className="flex-1 btn-primary flex items-center justify-center gap-2 md:gap-3 py-4 px-4 md:px-8 text-sm md:text-base"
                 >
-                  <MessageCircle size={20} />
-                  Hubungi Kami (WhatsApp)
+                  <MessageCircle size={20} className="shrink-0" />
+                  <span className="truncate">Hubungi Kami (WhatsApp)</span>
                 </a>
                 <button 
                   onClick={() => toggleWishlist(product.id.toString())}
                   className={cn(
-                    "p-4 border rounded-full transition-all duration-300",
+                    "p-4 border rounded-full transition-all duration-300 shrink-0",
                     isFavorite 
                       ? "bg-primary-text text-bg-main border-primary-text" 
                       : "border-primary-text/20 hover:bg-bg-accent"
                   )}
+                  title={isFavorite ? "Hapus dari Wishlist" : "Tambah ke Wishlist"}
                 >
                   <Heart size={24} className={cn(isFavorite && "fill-current")} />
                 </button>
               </div>
 
-              <div className="grid grid-cols-2 gap-6 pt-8 border-t border-primary-text/10">
-                <div className="flex items-start gap-4">
-                  <Truck className="text-primary-text/40" size={24} />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-primary-text/10">
+                <div className="flex items-start gap-5">
+                  <div className="w-12 h-12 rounded-2xl bg-bg-accent/50 flex items-center justify-center shrink-0">
+                    <Truck className="text-primary-text/60" size={24} />
+                  </div>
                   <div>
-                    <h5 className="text-sm font-bold uppercase tracking-widest mb-1">Pengiriman Cepat</h5>
-                    <p className="text-xs text-primary-text/60">Pengiriman hari yang sama tersedia untuk pesanan sebelum jam 12 siang.</p>
+                    <h5 className="text-sm font-bold uppercase tracking-widest mb-1.5">Pengiriman Cepat</h5>
+                    <p className="text-xs text-primary-text/60 leading-relaxed">Pengiriman hari yang sama tersedia untuk pesanan sebelum jam 12 siang.</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <ShieldCheck className="text-primary-text/40" size={24} />
+                <div className="flex items-start gap-5">
+                  <div className="w-12 h-12 rounded-2xl bg-bg-accent/50 flex items-center justify-center shrink-0">
+                    <ShieldCheck className="text-primary-text/60" size={24} />
+                  </div>
                   <div>
-                    <h5 className="text-sm font-bold uppercase tracking-widest mb-1">Jaminan Kesegaran</h5>
-                    <p className="text-xs text-primary-text/60">Kami menjamin kesegaran bunga kami selama 7 hari.</p>
+                    <h5 className="text-sm font-bold uppercase tracking-widest mb-1.5">Jaminan Kesegaran</h5>
+                    <p className="text-xs text-primary-text/60 leading-relaxed">Kami menjamin kesegaran bunga kami selama 7 hari.</p>
                   </div>
                 </div>
               </div>

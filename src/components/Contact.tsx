@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Send, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Send, Instagram, Facebook, Twitter, MessageCircle } from 'lucide-react';
+import { getWhatsAppLink } from '@/src/constants';
 
 export default function Contact() {
   return (
@@ -15,9 +16,23 @@ export default function Contact() {
                 Tim kami siap membantu Anda menciptakan pengalaman bunga yang sempurna.
               </p>
               
-              <div className="space-y-6">
-                <p className="text-xl font-serif">+62 812 3456 7890</p>
-                <p className="text-xl font-serif">halo@moonfleurs.com</p>
+              <div className="space-y-8">
+                <div className="space-y-2">
+                  <p className="text-xl font-serif">+62 812 3456 7890</p>
+                  <p className="text-xl font-serif">halo@moonfleurs.com</p>
+                </div>
+
+                <div className="pt-2">
+                  <a 
+                    href={getWhatsAppLink()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold hover:shadow-lg hover:scale-105 transition-all duration-300"
+                  >
+                    <MessageCircle size={20} />
+                    Chat via WhatsApp
+                  </a>
+                </div>
                 
                 <div className="pt-6">
                   <p className="text-xs uppercase tracking-[0.3em] mb-4 font-bold opacity-40">Ikuti Kami</p>

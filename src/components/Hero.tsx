@@ -50,9 +50,9 @@ export default function Hero() {
             <div className="absolute -top-12 -right-12 w-64 h-64 bg-bg-accent rounded-full -z-0 opacity-50 blur-3xl" />
             <div className="absolute -bottom-8 -left-8 w-48 h-48 border border-primary-text/10 rounded-full -z-0" />
             
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl z-20 hidden md:block max-w-[200px]">
-              <p className="text-xs uppercase tracking-widest font-bold opacity-40 mb-2">Today's Pick</p>
-              <p className="font-serif italic text-lg leading-tight">"The Midnight Rose Collection"</p>
+            <div className="absolute -bottom-6 -right-6 bg-white p-4 md:p-6 rounded-2xl shadow-xl z-20 max-w-[160px] md:max-w-[200px]">
+              <p className="text-[10px] md:text-xs uppercase tracking-widest font-bold opacity-40 mb-1 md:mb-2">Today's Pick</p>
+              <p className="font-serif italic text-sm md:text-lg leading-tight">"The Midnight Rose Collection"</p>
             </div>
           </motion.div>
         </div>
