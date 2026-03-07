@@ -5,10 +5,13 @@ import { MessageCircle, ArrowLeft, Check, Truck, ShieldCheck, Heart } from 'luci
 import { PRODUCTS, getWhatsAppLink, Product } from '@/src/constants';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { useWishlist } from '../context/WishlistContext';
+import { cn } from '@/src/lib/utils';
 
 export default function ProductDetail() {
   const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<Product | null>(null);
+  const { toggleWishlist, isInWishlist } = useWishlist();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,6 +31,8 @@ export default function ProductDetail() {
       </div>
     );
   }
+
+  const isFavorite = isInWishlist(product.id.toString());
 
   return (
     <main className="min-h-screen bg-bg-main">
@@ -122,8 +127,16 @@ export default function ProductDetail() {
                   <MessageCircle size={20} />
                   Hubungi Kami (WhatsApp)
                 </a>
-                <button className="p-4 border border-primary-text/20 rounded-full hover:bg-bg-accent transition-colors">
-                  <Heart size={24} />
+                <button 
+                  onClick={() => toggleWishlist(product.id.toString())}
+                  className={cn(
+                    "p-4 border rounded-full transition-all duration-300",
+                    isFavorite 
+                      ? "bg-primary-text text-bg-main border-primary-text" 
+                      : "border-primary-text/20 hover:bg-bg-accent"
+                  )}
+                >
+                  <Heart size={24} className={cn(isFavorite && "fill-current")} />
                 </button>
               </div>
 

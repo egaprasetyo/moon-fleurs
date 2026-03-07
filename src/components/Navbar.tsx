@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Heart } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/src/lib/utils';
+import { useWishlist } from '../context/WishlistContext';
 
 const navLinks = [
-  { name: 'Home', href: '/' },
-  { name: 'Shop', href: '/shop' },
-  { name: 'Categories', href: '/#categories' },
-  { name: 'Our Store', href: '/#location' },
-  { name: 'Contact', href: '/#contact' },
+  { name: 'Beranda', href: '/' },
+  { name: 'Toko', href: '/shop' },
+  { name: 'Kategori', href: '/categories' },
+  { name: 'Toko Kami', href: '/#location' },
+  { name: 'Kontak', href: '/#contact' },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const { wishlist } = useWishlist();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,10 +60,33 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
+          <Link 
+            to="/wishlist" 
+            className="relative p-2 hover:opacity-60 transition-opacity"
+            title="Wishlist"
+          >
+            <Heart size={20} className={cn(wishlist.length > 0 && "fill-primary-text")} />
+            {wishlist.length > 0 && (
+              <span className="absolute top-0 right-0 w-4 h-4 bg-primary-text text-bg-main text-[10px] flex items-center justify-center rounded-full font-bold">
+                {wishlist.length}
+              </span>
+            )}
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center gap-4">
+          <Link 
+            to="/wishlist" 
+            className="relative p-2"
+          >
+            <Heart size={20} className={cn(wishlist.length > 0 && "fill-primary-text")} />
+            {wishlist.length > 0 && (
+              <span className="absolute top-0 right-0 w-4 h-4 bg-primary-text text-bg-main text-[10px] flex items-center justify-center rounded-full font-bold">
+                {wishlist.length}
+              </span>
+            )}
+          </Link>
           <button onClick={() => setIsOpen(!isOpen)} className="p-2">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
