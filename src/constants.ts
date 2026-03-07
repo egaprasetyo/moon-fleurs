@@ -42,7 +42,7 @@ export const CATEGORIES: Category[] = [
   {
     id: 'simpati',
     name: 'Bunga Simpati',
-    image: 'https://images.unsplash.com/photo-1525310235261-9462700be58e?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=800&auto=format&fit=crop',
     count: '12 Produk',
     description: 'Sampaikan belasungkawa dan dukungan dengan rangkaian yang menenangkan.'
   }
@@ -63,7 +63,7 @@ export const PRODUCTS: Product[] = [
     id: 2,
     name: 'Ethereal Peony',
     price: 'Rp 1.200.000',
-    image: 'https://images.unsplash.com/photo-1523694559144-4ec08b9e113c?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?q=80&w=800&auto=format&fit=crop',
     tag: 'Premium',
     description: 'Bunga peony yang lembut dan halus dalam nuansa blush dan krem, sempurna untuk momen romantis.',
     details: ['8 Peony Besar', 'Bunga Wax Putih', 'Sentuhan Pita Sutra'],
