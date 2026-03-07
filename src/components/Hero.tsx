@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-bg-main">
-      <div className="container mx-auto px-6 md:px-12">
+    <section className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-bg-main">
+      <div className="container mx-auto px-6 md:px-12 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
