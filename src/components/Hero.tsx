@@ -13,21 +13,21 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <span className="inline-block text-xs uppercase tracking-[0.4em] mb-6 font-semibold opacity-60">
-              Est. 2024 • Luxury Boutique
+              Est. 2024 • Butik Bunga Mewah
             </span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] mb-8 text-primary-text">
-              Elegant Flowers for Every <span className="italic">Moment</span>
+              Bunga Elegan untuk Setiap <span className="italic">Momen</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-text/70 mb-12 font-light leading-relaxed max-w-lg">
-              Crafting bespoke floral arrangements that speak the language of the heart. 
-              Experience the art of premium gifting with Moon Fleurs.
+              Merangkai bunga kustom yang menyampaikan pesan dari hati. 
+              Rasakan seni pemberian hadiah premium bersama Moon Fleurs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/shop" className="btn-primary text-center">
-                Shop Collection
+                Belanja Koleksi
               </Link>
               <a href="#categories" className="btn-outline text-center">
-                View Categories
+                Lihat Kategori
               </a>
             </div>
           </motion.div>

@@ -12,24 +12,24 @@ export default function Newsletter() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">Join Our Bloom Club</h2>
+            <h2 className="text-4xl md:text-5xl font-serif mb-6">Bergabung dengan Bloom Club</h2>
             <p className="text-lg text-primary-text/70 mb-10 max-w-2xl mx-auto">
-              Subscribe to receive floral inspiration, exclusive offers, and 
-              early access to our seasonal collections.
+              Berlangganan untuk menerima inspirasi bunga, penawaran eksklusif, dan 
+              akses awal ke koleksi musiman kami.
             </p>
             
             <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
               <input 
                 type="email" 
-                placeholder="Enter your email address"
+                placeholder="Masukkan alamat email Anda"
                 className="flex-1 bg-white border-none rounded-full px-8 py-4 focus:ring-2 focus:ring-primary-text/20 transition-all outline-none"
               />
               <button className="btn-primary whitespace-nowrap">
-                Subscribe
+                Berlangganan
               </button>
             </form>
             <p className="mt-6 text-xs text-primary-text/40 tracking-wide">
-              By subscribing, you agree to our Privacy Policy and Terms of Service.
+              Dengan berlangganan, Anda menyetujui Kebijakan Privasi dan Ketentuan Layanan kami.
             </p>
           </motion.div>
         </div>

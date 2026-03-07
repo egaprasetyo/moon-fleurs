@@ -20,21 +20,21 @@ export default function ProductList() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
             <div className="max-w-2xl">
               <span className="text-xs uppercase tracking-[0.4em] mb-4 inline-block font-semibold opacity-60">
-                Our Full Collection
+                Koleksi Lengkap Kami
               </span>
               <h1 className="text-5xl md:text-6xl font-serif mb-6 text-primary-text">
-                Shop All <span className="italic">Bouquets</span>
+                Belanja Semua <span className="italic">Buket</span>
               </h1>
               <p className="text-lg text-primary-text/70 leading-relaxed">
-                Explore our complete range of handcrafted floral arrangements. 
-                From romantic roses to exotic orchids, find the perfect gift for your loved ones.
+                Jelajahi rangkaian lengkap rangkaian bunga buatan tangan kami. 
+                Dari mawar romantis hingga anggrek eksotis, temukan hadiah sempurna untuk orang tersayang.
               </p>
             </div>
             
             <div className="relative w-full md:w-80">
               <input 
                 type="text" 
-                placeholder="Search flowers..."
+                placeholder="Cari bunga..."
                 className="w-full bg-bg-accent/30 border-none rounded-full px-12 py-4 focus:ring-2 focus:ring-primary-text/20 transition-all outline-none"
               />
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-primary-text/40" size={20} />
@@ -51,12 +51,14 @@ export default function ProductList() {
                 className="group"
               >
                 <div className="relative aspect-square overflow-hidden rounded-3xl mb-6 bg-white shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
-                  />
+                  <Link to={`/product/${product.id}`} className="block w-full h-full">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
+                    />
+                  </Link>
                   
                   {product.tag && (
                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">
@@ -91,7 +93,7 @@ export default function ProductList() {
                         {product.name}
                       </h3>
                     </Link>
-                    <p className="text-sm text-primary-text/60 italic">Hand-picked seasonal blooms</p>
+                    <p className="text-sm text-primary-text/60 italic">Bunga musiman pilihan</p>
                   </div>
                   <span className="text-lg font-medium">{product.price}</span>
                 </div>

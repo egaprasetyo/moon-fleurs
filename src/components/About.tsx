@@ -33,40 +33,40 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-xs uppercase tracking-[0.4em] mb-4 inline-block font-semibold opacity-60">
-              Our Story
+              Cerita Kami
             </span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-8 leading-tight">
-              Crafting Beauty Since <span className="italic">2012</span>
+              Merangkai Keindahan Sejak <span className="italic">2012</span>
             </h2>
             <div className="space-y-6 text-lg text-primary-text/80 leading-relaxed">
               <p>
-                Moon Fleurs began with a simple belief: that flowers have the power to transform 
-                any space and uplift any spirit. What started as a small garden studio has 
-                grown into a premier luxury boutique.
+                Moon Fleurs dimulai dengan keyakinan sederhana: bahwa bunga memiliki kekuatan untuk mengubah 
+                setiap ruangan dan membangkitkan semangat. Apa yang dimulai sebagai studio taman kecil telah 
+                tumbuh menjadi butik mewah terkemuka.
               </p>
               <p>
-                Our master florists travel the world to source the most exquisite blooms, 
-                ensuring that every arrangement we create is a masterpiece of color, 
-                texture, and scent.
+                Florist ahli kami menjelajahi dunia untuk mencari bunga yang paling istimewa, 
+                memastikan bahwa setiap rangkaian yang kami buat adalah mahakarya warna, 
+                tekstur, dan aroma.
               </p>
               <p className="font-serif italic text-2xl text-primary-text mt-8">
-                "We don't just sell flowers; we curate emotions."
+                "Kami tidak hanya menjual bunga; kami mengkurasi emosi."
               </p>
             </div>
             <div className="mt-12 flex items-center gap-6">
               <div className="text-center">
-                <p className="text-3xl font-serif">12k+</p>
-                <p className="text-xs uppercase tracking-widest opacity-60">Happy Clients</p>
+                <p className="text-3xl font-serif">12rb+</p>
+                <p className="text-xs uppercase tracking-widest opacity-60">Klien Puas</p>
               </div>
               <div className="w-px h-12 bg-primary-text/10" />
               <div className="text-center">
                 <p className="text-3xl font-serif">150+</p>
-                <p className="text-xs uppercase tracking-widest opacity-60">Daily Deliveries</p>
+                <p className="text-xs uppercase tracking-widest opacity-60">Pengiriman Harian</p>
               </div>
               <div className="w-px h-12 bg-primary-text/10" />
               <div className="text-center">
                 <p className="text-3xl font-serif">15</p>
-                <p className="text-xs uppercase tracking-widest opacity-60">Awards Won</p>
+                <p className="text-xs uppercase tracking-widest opacity-60">Penghargaan</p>
               </div>
             </div>
           </motion.div>

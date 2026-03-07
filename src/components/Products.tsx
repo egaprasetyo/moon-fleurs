@@ -10,9 +10,9 @@ export default function Products() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.4em] mb-4 inline-block font-semibold opacity-60">
-            Our Collection
+            Koleksi Kami
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif mb-6">Featured Bouquets</h2>
+          <h2 className="text-4xl md:text-5xl font-serif mb-6">Buket Unggulan</h2>
           <div className="h-px w-24 bg-primary-text/20 mx-auto" />
         </div>
 
@@ -27,12 +27,14 @@ export default function Products() {
               className="group"
             >
               <div className="relative aspect-square overflow-hidden rounded-3xl mb-6 bg-white shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-2">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
-                />
+                <Link to={`/product/${product.id}`} className="block w-full h-full">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                </Link>
                 
                 {product.tag && (
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">
@@ -67,7 +69,7 @@ export default function Products() {
                       {product.name}
                     </h3>
                   </Link>
-                  <p className="text-sm text-primary-text/60 italic">Hand-picked seasonal blooms</p>
+                  <p className="text-sm text-primary-text/60 italic">Bunga musiman pilihan</p>
                 </div>
                 <span className="text-lg font-medium">{product.price}</span>
               </div>
@@ -77,7 +79,7 @@ export default function Products() {
 
         <div className="mt-20 text-center">
           <Link to="/shop" className="btn-outline">
-            View All Products
+            Lihat Semua Produk
           </Link>
         </div>
       </div>

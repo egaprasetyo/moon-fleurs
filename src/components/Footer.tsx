@@ -32,47 +32,65 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm uppercase tracking-[0.3em] font-bold mb-8 opacity-40">Quick Links</h4>
+            <h4 className="text-sm uppercase tracking-[0.3em] font-bold mb-8 opacity-40">Tautan Cepat</h4>
             <ul className="space-y-4 text-sm">
-              <li><a href="#" className="hover:opacity-60 transition-opacity">Home</a></li>
-              <li><a href="#shop" className="hover:opacity-60 transition-opacity">Shop All</a></li>
-              <li><a href="#categories" className="hover:opacity-60 transition-opacity">Categories</a></li>
-              <li><a href="#location" className="hover:opacity-60 transition-opacity">Our Store</a></li>
-              <li><a href="#contact" className="hover:opacity-60 transition-opacity">Contact Us</a></li>
+              <li><a href="#" className="hover:opacity-60 transition-opacity">Beranda</a></li>
+              <li><a href="#shop" className="hover:opacity-60 transition-opacity">Semua Produk</a></li>
+              <li><a href="#categories" className="hover:opacity-60 transition-opacity">Kategori</a></li>
+              <li><a href="#location" className="hover:opacity-60 transition-opacity">Toko Kami</a></li>
+              <li><a href="#contact" className="hover:opacity-60 transition-opacity">Hubungi Kami</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-sm uppercase tracking-[0.3em] font-bold mb-8 opacity-40">Customer Care</h4>
+            <h4 className="text-sm uppercase tracking-[0.3em] font-bold mb-8 opacity-40">Layanan Pelanggan</h4>
             <ul className="space-y-4 text-sm">
-              <li><a href="#" className="hover:opacity-60 transition-opacity">Shipping Policy</a></li>
-              <li><a href="#" className="hover:opacity-60 transition-opacity">Returns & Refunds</a></li>
-              <li><a href="#" className="hover:opacity-60 transition-opacity">Flower Care Guide</a></li>
+              <li><a href="#" className="hover:opacity-60 transition-opacity">Kebijakan Pengiriman</a></li>
+              <li><a href="#" className="hover:opacity-60 transition-opacity">Pengembalian & Refund</a></li>
+              <li><a href="#" className="hover:opacity-60 transition-opacity">Panduan Perawatan Bunga</a></li>
               <li><a href="#" className="hover:opacity-60 transition-opacity">FAQ</a></li>
-              <li><a href="#" className="hover:opacity-60 transition-opacity">Privacy Policy</a></li>
+              <li><a href="#" className="hover:opacity-60 transition-opacity">Kebijakan Privasi</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-sm uppercase tracking-[0.3em] font-bold mb-8 opacity-40">Boutique</h4>
+            <h4 className="text-sm uppercase tracking-[0.3em] font-bold mb-8 opacity-40">Butik</h4>
             <ul className="space-y-4 text-sm text-primary-text/60">
-              <li>123 Floral Avenue, Moon District</li>
-              <li>Paris, France 75001</li>
-              <li>+33 (0) 1 23 45 67 89</li>
-              <li>hello@moonfleurs.com</li>
+              <li>Jl. Bunga Melati No. 123, Jakarta Selatan</li>
+              <li>DKI Jakarta, Indonesia 12345</li>
+              <li>+62 812 3456 7890</li>
+              <li>halo@moonfleurs.com</li>
             </ul>
+          </div>
+        </div>
+
+        {/* Payment & Shipping */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12 py-12 border-t border-primary-text/5">
+          <div>
+            <h4 className="text-xs uppercase tracking-[0.3em] font-bold mb-6 opacity-40">Metode Pembayaran</h4>
+            <div className="flex flex-wrap gap-6 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/QRIS_logo.svg/1200px-QRIS_logo.svg.png" alt="QRIS" className="h-6 object-contain" referrerPolicy="no-referrer" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1200px-Bank_Central_Asia.svg.png" alt="BCA" className="h-4 object-contain" referrerPolicy="no-referrer" />
+            </div>
+          </div>
+          <div>
+            <h4 className="text-xs uppercase tracking-[0.3em] font-bold mb-6 opacity-40">Metode Pengiriman</h4>
+            <div className="flex flex-wrap gap-6 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Gojek_logo_2019.svg/1200px-Gojek_logo_2019.svg.png" alt="Gojek" className="h-6 object-contain" referrerPolicy="no-referrer" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/GoSend_logo.svg/1200px-GoSend_logo.svg.png" alt="GoSend" className="h-6 object-contain" referrerPolicy="no-referrer" />
+            </div>
           </div>
         </div>
 
         <div className="pt-12 border-t border-primary-text/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-xs text-primary-text/40 tracking-widest uppercase">
-            © 2024 Moon Fleurs Boutique. All Rights Reserved.
+            © 2024 Moon Fleurs Boutique. Hak Cipta Dilindungi.
           </p>
           <button 
             onClick={scrollToTop}
             className="group flex items-center gap-2 text-xs uppercase tracking-widest font-bold opacity-60 hover:opacity-100 transition-opacity"
           >
-            Back to Top
+            Kembali ke Atas
             <div className="w-8 h-8 rounded-full border border-primary-text/20 flex items-center justify-center group-hover:-translate-y-1 transition-transform">
               <ArrowUp size={14} />
             </div>

@@ -22,8 +22,8 @@ export default function ProductDetail() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-bg-main">
         <div className="text-center">
-          <h1 className="text-4xl font-serif mb-4">Product Not Found</h1>
-          <Link to="/shop" className="btn-outline">Back to Shop</Link>
+          <h1 className="text-4xl font-serif mb-4">Produk Tidak Ditemukan</h1>
+          <Link to="/shop" className="btn-outline">Kembali ke Toko</Link>
         </div>
       </div>
     );
@@ -40,7 +40,7 @@ export default function ProductDetail() {
             className="inline-flex items-center gap-2 text-sm uppercase tracking-widest font-bold opacity-40 hover:opacity-100 transition-opacity mb-12"
           >
             <ArrowLeft size={16} />
-            Back to Shop
+            Kembali ke Toko
           </Link>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -98,12 +98,12 @@ export default function ProductDetail() {
                 </p>
                 
                 <div className="space-y-3">
-                  <h4 className="text-sm uppercase tracking-widest font-bold opacity-40">What's Included</h4>
+                  <h4 className="text-sm uppercase tracking-widest font-bold opacity-40">Apa yang Termasuk</h4>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {product.details.map((detail, index) => (
                       <li key={index} className="flex items-center gap-3 text-primary-text/80">
                         <div className="w-5 h-5 rounded-full bg-bg-accent flex items-center justify-center shrink-0">
-                          <Check size={12} />
+                          <div className="w-1.5 h-1.5 rounded-full bg-primary-text/40" />
                         </div>
                         {detail}
                       </li>
@@ -131,15 +131,15 @@ export default function ProductDetail() {
                 <div className="flex items-start gap-4">
                   <Truck className="text-primary-text/40" size={24} />
                   <div>
-                    <h5 className="text-sm font-bold uppercase tracking-widest mb-1">Fast Delivery</h5>
-                    <p className="text-xs text-primary-text/60">Same day delivery available for orders before 12 PM.</p>
+                    <h5 className="text-sm font-bold uppercase tracking-widest mb-1">Pengiriman Cepat</h5>
+                    <p className="text-xs text-primary-text/60">Pengiriman hari yang sama tersedia untuk pesanan sebelum jam 12 siang.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <ShieldCheck className="text-primary-text/40" size={24} />
                   <div>
-                    <h5 className="text-sm font-bold uppercase tracking-widest mb-1">Freshness Guarantee</h5>
-                    <p className="text-xs text-primary-text/60">We guarantee the freshness of our flowers for 7 days.</p>
+                    <h5 className="text-sm font-bold uppercase tracking-widest mb-1">Jaminan Kesegaran</h5>
+                    <p className="text-xs text-primary-text/60">Kami menjamin kesegaran bunga kami selama 7 hari.</p>
                   </div>
                 </div>
               </div>
@@ -151,7 +151,7 @@ export default function ProductDetail() {
       {/* Related Products */}
       <section className="py-24 bg-bg-accent/20">
         <div className="container mx-auto px-6 md:px-12">
-          <h2 className="text-3xl font-serif mb-12">You May Also Like</h2>
+          <h2 className="text-3xl font-serif mb-12">Anda Mungkin Juga Suka</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {PRODUCTS.filter(p => p.id !== product.id).slice(0, 4).map((p) => (
               <Link key={p.id} to={`/product/${p.id}`} className="group">

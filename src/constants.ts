@@ -12,56 +12,56 @@ export const PRODUCTS: Product[] = [
   {
     id: 1,
     name: 'Midnight Rose',
-    price: '$85.00',
+    price: 'Rp 850.000',
     image: 'https://images.unsplash.com/photo-1559563458-527698bf5295?q=80&w=800&auto=format&fit=crop',
-    tag: 'Best Seller',
-    description: 'A deep, mysterious arrangement of dark red roses and seasonal foliage.',
-    details: ['12 Premium Red Roses', 'Eucalyptus Accents', 'Signature Black Wrap']
+    tag: 'Terlaris',
+    description: 'Rangkaian mawar merah tua yang misterius dipadukan dengan dedaunan musiman yang elegan.',
+    details: ['12 Mawar Merah Premium', 'Aksen Eucalyptus', 'Bungkus Hitam Khas Moon Fleurs']
   },
   {
     id: 2,
     name: 'Ethereal Peony',
-    price: '$120.00',
+    price: 'Rp 1.200.000',
     image: 'https://images.unsplash.com/photo-1523694559144-4ec08b9e113c?q=80&w=800&auto=format&fit=crop',
     tag: 'Premium',
-    description: 'Soft, delicate peonies in shades of blush and cream, perfect for romantic gestures.',
-    details: ['8 Large Peonies', 'White Waxflower', 'Silk Ribbon Finish']
+    description: 'Bunga peony yang lembut dan halus dalam nuansa blush dan krem, sempurna untuk momen romantis.',
+    details: ['8 Peony Besar', 'Bunga Wax Putih', 'Sentuhan Pita Sutra']
   },
   {
     id: 3,
     name: 'Golden Sunburst',
-    price: '$65.00',
+    price: 'Rp 650.000',
     image: 'https://images.unsplash.com/photo-1591886960571-74d43a9d4166?q=80&w=800&auto=format&fit=crop',
-    tag: 'New',
-    description: 'Bright and cheerful sunflowers paired with golden-hued accents.',
-    details: ['5 Large Sunflowers', 'Solidago', 'Eco-friendly Kraft Wrap']
+    tag: 'Baru',
+    description: 'Bunga matahari yang cerah dan ceria dipadukan dengan aksen bernuansa emas.',
+    details: ['5 Bunga Matahari Besar', 'Solidago', 'Bungkus Kraft Ramah Lingkungan']
   },
   {
     id: 4,
     name: 'Lavender Dream',
-    price: '$95.00',
+    price: 'Rp 950.000',
     image: 'https://images.unsplash.com/photo-1533616688419-b7a585564566?q=80&w=800&auto=format&fit=crop',
-    tag: 'Limited',
-    description: 'A calming mix of lavender, purple lisianthus, and silver-toned greenery.',
-    details: ['Dried Lavender Sprigs', 'Purple Lisianthus', 'Silver Suede Foliage']
+    tag: 'Terbatas',
+    description: 'Perpaduan menenangkan antara lavender, lisianthus ungu, dan tanaman hijau bernuansa perak.',
+    details: ['Tangkai Lavender Kering', 'Lisianthus Ungu', 'Dedaunan Silver Suede']
   },
   {
     id: 5,
     name: 'Pure Lily',
-    price: '$75.00',
+    price: 'Rp 750.000',
     image: 'https://images.unsplash.com/photo-1508784411316-02b8cd4d3a3a?q=80&w=800&auto=format&fit=crop',
     tag: '',
-    description: 'Elegant white lilies that symbolize purity and refined beauty.',
-    details: ['6 Oriental Lilies', 'Aspidistra Leaves', 'Glass Vase Included']
+    description: 'Bunga lili putih elegan yang melambangkan kemurnian dan keindahan yang halus.',
+    details: ['6 Lili Oriental', 'Daun Aspidistra', 'Termasuk Vas Kaca']
   },
   {
     id: 6,
     name: 'Wild Orchard',
-    price: '$110.00',
+    price: 'Rp 1.100.000',
     image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=800&auto=format&fit=crop',
     tag: 'Premium',
-    description: 'An exotic collection of orchids and tropical blooms for a bold statement.',
-    details: ['Cymbidium Orchids', 'Protea', 'Monstera Leaves']
+    description: 'Koleksi eksotis anggrek dan bunga tropis untuk pernyataan yang berani dan mewah.',
+    details: ['Anggrek Cymbidium', 'Protea', 'Daun Monstera']
   }
 ];
 

@@ -3,24 +3,24 @@ import { motion } from 'motion/react';
 
 const categories = [
   {
-    name: 'Birthday Flowers',
+    name: 'Bunga Ulang Tahun',
     image: 'https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?q=80&w=800&auto=format&fit=crop',
-    count: '24 Items'
+    count: '24 Produk'
   },
   {
-    name: 'Wedding Bouquets',
+    name: 'Buket Pernikahan',
     image: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop',
-    count: '18 Items'
+    count: '18 Produk'
   },
   {
-    name: 'Romantic Flowers',
+    name: 'Bunga Romantis',
     image: 'https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=800&auto=format&fit=crop',
-    count: '32 Items'
+    count: '32 Produk'
   },
   {
-    name: 'Sympathy Flowers',
+    name: 'Bunga Simpati',
     image: 'https://images.unsplash.com/photo-1525310235261-9462700be58e?q=80&w=800&auto=format&fit=crop',
-    count: '12 Items'
+    count: '12 Produk'
   }
 ];
 
@@ -30,14 +30,14 @@ export default function Categories() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-xl">
-            <h2 className="text-4xl md:text-5xl font-serif mb-4">Shop by Category</h2>
+            <h2 className="text-4xl md:text-5xl font-serif mb-4">Belanja Berdasarkan Kategori</h2>
             <p className="text-primary-text/70">
-              Find the perfect arrangement for any occasion. Each category is curated with 
-              the freshest seasonal blooms.
+              Temukan rangkaian bunga yang sempurna untuk setiap momen. Setiap kategori dikurasi dengan 
+              bunga musiman tersegar.
             </p>
           </div>
           <a href="#" className="text-sm font-medium uppercase tracking-widest border-b border-primary-text pb-1 hover:opacity-60 transition-opacity">
-            View All Categories
+            Lihat Semua Kategori
           </a>
         </div>
 

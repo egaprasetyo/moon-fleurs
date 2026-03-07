@@ -13,7 +13,7 @@ export default function Location() {
             viewport={{ once: true }}
             className="bg-white p-10 md:p-16 rounded-[2rem] shadow-sm flex flex-col justify-center"
           >
-            <h2 className="text-4xl font-serif mb-10">Visit Our Boutique</h2>
+            <h2 className="text-4xl font-serif mb-10">Kunjungi Butik Kami</h2>
             
             <div className="space-y-10">
               <div className="flex gap-6">
@@ -21,10 +21,10 @@ export default function Location() {
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl mb-2">Location</h3>
+                  <h3 className="font-serif text-xl mb-2">Lokasi</h3>
                   <p className="text-primary-text/70 leading-relaxed">
-                    123 Floral Avenue, Moon District<br />
-                    Paris, France 75001
+                    Jl. Bunga Melati No. 123, Jakarta Selatan<br />
+                    DKI Jakarta, Indonesia 12345
                   </p>
                 </div>
               </div>
@@ -34,11 +34,11 @@ export default function Location() {
                   <Clock size={20} />
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl mb-2">Store Hours</h3>
+                  <h3 className="font-serif text-xl mb-2">Jam Operasional</h3>
                   <div className="text-primary-text/70 space-y-1">
-                    <p className="flex justify-between gap-8"><span>Mon - Fri:</span> <span>09:00 AM - 08:00 PM</span></p>
-                    <p className="flex justify-between gap-8"><span>Saturday:</span> <span>10:00 AM - 06:00 PM</span></p>
-                    <p className="flex justify-between gap-8"><span>Sunday:</span> <span>Closed</span></p>
+                    <p className="flex justify-between gap-8"><span>Senin - Jumat:</span> <span>09:00 - 20:00</span></p>
+                    <p className="flex justify-between gap-8"><span>Sabtu:</span> <span>10:00 - 18:00</span></p>
+                    <p className="flex justify-between gap-8"><span>Minggu:</span> <span>Tutup</span></p>
                   </div>
                 </div>
               </div>
@@ -48,9 +48,9 @@ export default function Location() {
                   <Phone size={20} />
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl mb-2">Contact</h3>
-                  <p className="text-primary-text/70">+33 (0) 1 23 45 67 89</p>
-                  <p className="text-primary-text/70">hello@moonfleurs.com</p>
+                  <h3 className="font-serif text-xl mb-2">Kontak</h3>
+                  <p className="text-primary-text/70">+62 812 3456 7890</p>
+                  <p className="text-primary-text/70">halo@moonfleurs.com</p>
                 </div>
               </div>
             </div>
